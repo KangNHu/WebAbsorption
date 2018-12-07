@@ -1,1 +1,1 @@
-package tech.liveeasy.spider.webmagic.schedule;public interface DuplicateRemover<T> {     boolean isDuplicate(T element);     void resetDuplicateCheck();}
+package com.liveeasy.web.absorption.core.schehule;public interface DuplicateRemover {     boolean isDuplicate(String url , String suffix);     void resetDuplicateCheck(String url , String suffix);}

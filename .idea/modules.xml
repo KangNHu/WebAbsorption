@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/WebAbsorption.iml" filepath="$PROJECT_DIR$/.idea/WebAbsorption.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webabsortion-core/webabsortion-core.iml" filepath="$PROJECT_DIR$/webabsortion-core/webabsortion-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webabsortion-demo-beike/webabsortion-demo-beike.iml" filepath="$PROJECT_DIR$/webabsortion-demo-beike/webabsortion-demo-beike.iml" />
+    </modules>
+  </component>
+</project>

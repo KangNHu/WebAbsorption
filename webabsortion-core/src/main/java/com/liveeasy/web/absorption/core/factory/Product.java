@@ -1,1 +1,1 @@
-package tech.liveeasy.spider.webmagic.common;public interface Product extends Cloneable{    Product createClone() throws CloneNotSupportedException;}
+package com.liveeasy.web.absorption.core.factory;public interface Product extends Cloneable{    Product createClone() throws CloneNotSupportedException;}

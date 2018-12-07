@@ -1,1 +1,1 @@
-package com.liveeasy.web.absorption.core.plugin;public class SimpleDownloaderPlugin {}
+package com.liveeasy.web.absorption.core.plugin;import us.codecraft.webmagic.Request;import us.codecraft.webmagic.Task;public abstract class SimpleDownloaderPlugin implements DownloaderPlugin{    @Override    public void onSuccess(Request request) {        downloadPostPosition(request);    }    @Override    public void onError(Request request) {        processError(request);    }}

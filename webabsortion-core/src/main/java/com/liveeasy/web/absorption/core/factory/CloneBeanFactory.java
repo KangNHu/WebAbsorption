@@ -1,1 +1,1 @@
-package com.liveeasy.web.absorption.core.factory;public class CloneBeanFactory {}
+package com.liveeasy.web.absorption.core.factory;import java.util.List;public interface CloneBeanFactory {    <T extends Product> T getClone(Class<T> target) throws CloneNotSupportedException;    <T extends Product> T getClone(T target);    <T extends Product> List<T> getCloneList(List<T> target);}
