@@ -1,0 +1,1 @@
+package com.liveeasy.web.absorption.core.plugin;public class SimpleDownloaderPlugin {}

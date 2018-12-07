@@ -1,0 +1,1 @@
+package com.liveeasy.web.absorption.core.pipeline;import us.codecraft.webmagic.ResultItems;import us.codecraft.webmagic.Task;public interface DataPipeline extends Cloneable {     void pipeline(ResultItems resultItems, Task task);     DataPipeline createClone() throws CloneNotSupportedException;}

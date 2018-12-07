@@ -1,0 +1,1 @@
+package com.liveeasy.web.absorption.core.pipeline;import com.liveeasy.web.absorption.core.pipeline.DataPipeline;public abstract class AbstractDataPipeline implements DataPipeline {    public DataPipeline createClone() throws CloneNotSupportedException {        return (DataPipeline) super.clone();    }}

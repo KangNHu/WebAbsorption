@@ -1,0 +1,1 @@
+package com.liveeasy.web.absorption.core;public class WebAbsorption {}

@@ -1,0 +1,1 @@
+package com.liveeeasy.web.absorption.demo;public class SpiderService {}

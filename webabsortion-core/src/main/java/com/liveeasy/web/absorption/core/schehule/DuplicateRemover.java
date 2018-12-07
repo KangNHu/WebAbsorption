@@ -1,0 +1,1 @@
+package tech.liveeasy.spider.webmagic.schedule;public interface DuplicateRemover<T> {     boolean isDuplicate(T element);     void resetDuplicateCheck();}

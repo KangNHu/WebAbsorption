@@ -1,0 +1,1 @@
+package tech.liveeasy.spider.webmagic.common;public interface Product extends Cloneable{    Product createClone() throws CloneNotSupportedException;}

@@ -1,0 +1,1 @@
+package com.liveeasy.web.absorption.core.factory;public class CloneBeanFactory {}
