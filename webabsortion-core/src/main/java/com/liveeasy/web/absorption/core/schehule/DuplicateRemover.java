@@ -1,1 +1,1 @@
-package com.liveeasy.web.absorption.core.schehule;public interface DuplicateRemover {     boolean isDuplicate(String url , String suffix);     void resetDuplicateCheck(String url , String suffix);}
+package com.liveeasy.web.absorption.core.schehule;public interface DuplicateRemover<T> {     boolean isDuplicate(T element);     void resetDuplicateCheck();}

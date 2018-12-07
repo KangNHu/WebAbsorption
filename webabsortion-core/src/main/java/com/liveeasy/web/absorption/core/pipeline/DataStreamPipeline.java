@@ -1,1 +1,1 @@
-package com.liveeasy.web.absorption.core.pipeline;public class DataStreamPipeline {}
+package com.liveeasy.web.absorption.core.pipeline;import us.codecraft.webmagic.ResultItems;import us.codecraft.webmagic.Task;import java.io.InputStream;import java.util.List;public interface DataStreamPipeline extends WebAbsorptionPipeline{    void streamPipeline(InputStream inputStream);    List<String> getDataStreamUrl(ResultItems resultItems, Task task);}
