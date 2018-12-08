@@ -96,11 +96,5 @@
             <artifactId>spring-boot-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <!-- Spring Boot Redis 依赖 -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-redis</artifactId>
-            <version>${sb.redis.version}</version>
-        </dependency>
     </dependencies>
 </project>
