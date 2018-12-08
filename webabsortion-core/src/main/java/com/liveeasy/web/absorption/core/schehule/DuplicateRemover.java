@@ -1,1 +1,1 @@
-package com.liveeasy.web.absorption.core.schehule;public interface DuplicateRemover<T> {     boolean isDuplicate(T element);     void resetDuplicateCheck();}
+package com.liveeasy.web.absorption.core.schehule;public interface DuplicateRemover<T> {     boolean isDuplicate(T element);     void resetDuplicateCheck();     void redoQueue(T element);}
