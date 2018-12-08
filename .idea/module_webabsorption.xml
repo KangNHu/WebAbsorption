@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_webabsorption" default="compile.module.webabsorption">
+  <dirname property="module.webabsorption.basedir" file="${ant.file.module_webabsorption}"/>
+  
+  <property name="module.jdk.home.webabsorption" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.webabsorption" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.webabsorption" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.webabsorption" value="-encoding UTF-8 -source 1.8 -target 1.8 ${compiler.args}"/>
+  
+  <property name="webabsorption.output.dir" value="${module.webabsorption.basedir}/../target/classes"/>
+  <property name="webabsorption.testoutput.dir" value="${module.webabsorption.basedir}/../target/test-classes"/>
+  
+  <path id="webabsorption.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="webabsorption.module.production.classpath">
+    <path refid="${module.jdk.classpath.webabsorption}"/>
+  </path>
+  
+  <path id="webabsorption.runtime.production.module.classpath">
+    <pathelement location="${webabsorption.output.dir}"/>
+  </path>
+  
+  <path id="webabsorption.module.classpath">
+    <path refid="${module.jdk.classpath.webabsorption}"/>
+    <pathelement location="${webabsorption.output.dir}"/>
+  </path>
+  
+  <path id="webabsorption.runtime.module.classpath">
+    <pathelement location="${webabsorption.testoutput.dir}"/>
+    <pathelement location="${webabsorption.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.webabsorption">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.webabsorption">
+    <patternset refid="compiler.excluded"/>
+    <patternset refid="excluded.from.module.webabsorption"/>
+  </patternset>
+  
+  
+  <target name="compile.module.webabsorption" depends="compile.module.webabsorption.production,compile.module.webabsorption.tests" description="Compile module WebAbsorption"/>
+  
+  <target name="compile.module.webabsorption.production" depends="register.custom.compilers" description="Compile module WebAbsorption; production classes"/>
+  
+  <target name="compile.module.webabsorption.tests" depends="register.custom.compilers,compile.module.webabsorption.production" description="compile module WebAbsorption; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.webabsorption" description="cleanup module">
+    <delete dir="${webabsorption.output.dir}"/>
+    <delete dir="${webabsorption.testoutput.dir}"/>
+  </target>
+</project>
