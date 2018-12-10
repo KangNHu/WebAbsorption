@@ -25,6 +25,7 @@
 
     <properties>
         <us.codecraft.version>0.7.3</us.codecraft.version>
+        <sb.redis.version>1.3.2.RELEASE</sb.redis.version>
     </properties>
     <dependencies>
         <!--webmagic 基于java的爬虫框架-->
@@ -43,6 +44,11 @@
                     <artifactId>*</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-redis</artifactId>
+            <version>${sb.redis.version}</version>
         </dependency>
     </dependencies>
 </project>
