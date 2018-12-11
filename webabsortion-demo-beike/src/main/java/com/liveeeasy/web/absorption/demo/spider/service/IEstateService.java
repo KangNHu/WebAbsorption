@@ -1,1 +1,1 @@
-package com.liveeeasy.web.absorption.demo.spider.service;import org.apache.ibatis.annotations.Param;import java.util.List;import java.util.Map;public interface IEstateService {    void batchInsert(List<Map<String , Object>> maps);}
+package com.liveeeasy.web.absorption.demo.spider.service;import org.apache.ibatis.annotations.Param;import java.util.List;import java.util.Map;public interface IEstateService {    void batchInsert(List<Map> maps);}
