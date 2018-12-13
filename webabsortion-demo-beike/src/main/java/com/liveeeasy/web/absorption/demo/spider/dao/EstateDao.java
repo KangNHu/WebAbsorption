@@ -1,1 +1,0 @@
-package com.liveeeasy.web.absorption.demo.spider.dao;import org.apache.ibatis.annotations.Mapper;import org.apache.ibatis.annotations.Param;import java.util.List;import java.util.Map;@Mapperpublic interface EstateDao {   void batchInsert(@Param("maps") List<Map> maps);}

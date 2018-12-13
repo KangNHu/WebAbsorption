@@ -1,0 +1,1 @@
+package com.liveeeasy.web.absorption.demo.spider.wuba.service;import java.util.List;import java.util.Map;public interface IWuBaEstateService {    int BaseBatchInsert(List<Map<String, Object>> baseList);    int picBatchInsert(List<Map<String, Object>> picList);    int expertBatchInsert(List<Map<String, Object>> expertList);}

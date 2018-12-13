@@ -1,0 +1,1 @@
+package com.liveeeasy.web.absorption.demo.spider.beike.service;import java.util.List;import java.util.Map;public interface IBeiKeEstateService {    void batchInsert(List<Map> maps);}
