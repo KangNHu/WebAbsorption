@@ -25,7 +25,7 @@ public class DemoApplication {
      */
     public static void main(String[] args) throws CloneNotSupportedException, IllegalAccessException {
         ConfigurableApplicationContext run = SpringApplication.run(DemoApplication.class, args);
-        runWuBaSpider(run);
+        //runWuBaSpider(run);
     }
 
 
